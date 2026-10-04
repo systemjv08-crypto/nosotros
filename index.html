@@ -1,0 +1,4305 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#09090f">
+<title>J & M — Nuestro Universo ♡</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="icon" type="image/png" href="icono.png">
+<style>
+:root {
+  --bg:#09090f;
+  --panel:#11111b;
+  --panel2:#171525;
+  --purple:#a78bfa;
+  --purple2:#7553cb;
+  --pink:#f2b8cb;
+  --blue:#b9c5d3; 
+  --gold:#e8c986;
+  --white:#f8f6ff;
+  --muted:#a4a1b5;
+  --border:rgba(201,184,255,.13);
+  --radius:22px;
+}
+* {box-sizing:border-box;margin:0;padding:0}
+html {scroll-behavior:smooth;scroll-padding-top:90px}
+
+/* =========================================
+   SCROLLBAR GALÁCTICO — ZONE VIP
+   ========================================= */
+
+html {
+    scrollbar-width: auto;
+    scrollbar-color: #e8a7ff #0b0712;
+}
+
+/* Chrome, Edge, Opera */
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+/* Fondo del scrollbar */
+::-webkit-scrollbar-track {
+    background:
+        radial-gradient(circle at 50% 15%, rgba(210, 120, 255, 0.20), transparent 25%),
+        radial-gradient(circle at 30% 55%, rgba(255, 170, 220, 0.12), transparent 20%),
+        radial-gradient(circle at 70% 85%, rgba(224, 178, 76, 0.10), transparent 25%),
+        linear-gradient(
+            180deg,
+            #090611 0%,
+            #130b20 35%,
+            #090611 65%,
+            #160a20 100%
+        );
+
+    border-left: 1px solid rgba(218, 170, 255, 0.12);
+    box-shadow:
+        inset 1px 0 rgba(255, 255, 255, 0.03),
+        inset -1px 0 rgba(211, 157, 255, 0.08);
+}
+
+/* Barra que se mueve */
+::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+
+    background:
+        radial-gradient(
+            circle at 50% 25%,
+            #fff1ff 0%,
+            #efb8ff 15%,
+            #d88aff 45%,
+            #9b52c9 75%,
+            #63307e 100%
+        );
+
+    border: 2px solid rgba(225, 178, 255, 0.65);
+
+    box-shadow:
+        0 0 5px rgba(255, 214, 247, 0.9),
+        0 0 12px rgba(224, 139, 255, 0.8),
+        0 0 25px rgba(178, 85, 255, 0.55),
+        inset 0 0 8px rgba(255, 255, 255, 0.45);
+
+    min-height: 70px;
+}
+
+/* Hover */
+::-webkit-scrollbar-thumb:hover {
+    background:
+        radial-gradient(
+            circle at 50% 25%,
+            #fff9ff 0%,
+            #ffd9f5 20%,
+            #ed9cff 48%,
+            #b965db 75%,
+            #713b91 100%
+        );
+
+    box-shadow:
+        0 0 7px #fff0fa,
+        0 0 15px #efa6ff,
+        0 0 30px rgba(218, 112, 255, 0.8),
+        0 0 45px rgba(198, 91, 255, 0.35);
+}
+
+/* Botones superior/inferior */
+::-webkit-scrollbar-button {
+    height: 18px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #24112f,
+            #120a19
+        );
+
+    border: 1px solid rgba(224, 177, 255, 0.35);
+}
+
+/* Flecha superior */
+::-webkit-scrollbar-button:single-button:vertical:decrement {
+    border-radius: 10px 10px 0 0;
+
+    background:
+        linear-gradient(135deg, #2b1538, #100813);
+
+    box-shadow:
+        inset 0 0 7px rgba(222, 155, 255, 0.15),
+        0 0 8px rgba(201, 116, 255, 0.12);
+}
+
+/* Flecha inferior */
+::-webkit-scrollbar-button:single-button:vertical:increment {
+    border-radius: 0 0 10px 10px;
+
+    background:
+        linear-gradient(135deg, #100813, #2b1538);
+
+    box-shadow:
+        inset 0 0 7px rgba(222, 155, 255, 0.15),
+        0 0 8px rgba(201, 116, 255, 0.12);
+}
+body {
+  background:var(--bg);
+  color:var(--white);
+  font-family:"DM Sans",sans-serif;
+  overflow-x:hidden;
+}
+body::before {
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;
+  background:
+   radial-gradient(ellipse at 12% 20%,rgba(111,72,174,.12),transparent 40%),
+   radial-gradient(ellipse at 85% 65%,rgba(104,126,161,.08),transparent 38%);
+}
+a {color:inherit;text-decoration:none}
+button {font:inherit;color:inherit;cursor:pointer}
+button:focus-visible,a:focus-visible {outline:2px solid var(--pink);outline-offset:4px}
+#stars {position:fixed;inset:0;pointer-events:none;z-index:-1}
+.wrap {width:min(1120px,calc(100% - 40px));margin:auto}
+section {padding:100px 0}
+.eyebrow {
+  display:inline-flex;align-items:center;gap:9px;
+  color:var(--pink);font-size:.72rem;letter-spacing:3px;
+  text-transform:uppercase;margin-bottom:17px;
+}
+.eyebrow::before {content:"";width:20px;height:1px;background:var(--pink)}
+.section-head {text-align:center;margin-bottom:45px}
+.section-head h2,.display {
+  font-family:"Cormorant Garamond",serif;
+  font-weight:500;letter-spacing:-1.2px;
+}
+.section-head h2 {font-size:clamp(2.5rem,5vw,4rem)}
+.section-head p {color:var(--muted);margin-top:12px;line-height:1.8}
+.gradient {
+  background:linear-gradient(110deg,#fff 10%,#cbb8ff 48%,#f2b8cb 90%);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+nav {
+  position:fixed;top:0;left:0;right:0;z-index:50;
+  background:rgba(9,9,15,.78);backdrop-filter:blur(18px);
+  border-bottom:1px solid var(--border);
+}
+.nav-inner {
+  min-height:72px;display:flex;align-items:center;
+  justify-content:space-between;gap:20px;
+}
+.brand {font-family:"Cormorant Garamond",serif;font-size:1.65rem}
+.brand span {color:var(--pink)}
+.nav-links {display:flex;align-items:center;gap:24px}
+.nav-links a {font-size:.78rem;color:var(--muted);transition:.2s}
+.nav-links a:hover {color:var(--pink)}
+.menu-btn {display:none;background:none;border:0;font-size:1.2rem}
+.hero {
+  min-height:100svh;display:flex;align-items:center;text-align:center;
+  padding:130px 0 75px;position:relative;
+}
+.hero-content {max-width:850px;margin:auto}
+.orbit {
+  width:96px;height:96px;border:1px solid rgba(200,180,255,.3);
+  border-radius:50%;display:grid;place-items:center;margin:0 auto 28px;
+  position:relative;color:var(--pink);font-size:2rem;
+  box-shadow:0 0 50px rgba(167,139,250,.12);
+}
+.orbit::after {
+  content:"";position:absolute;width:9px;height:9px;border-radius:50%;
+  background:var(--gold);top:7px;right:11px;
+  box-shadow:0 0 14px var(--gold);
+}
+.hero h1 {
+  font-family:"Cormorant Garamond",serif;font-weight:500;
+  font-size:clamp(3.8rem,10vw,7.6rem);line-height:.94;
+  letter-spacing:-3px;margin-bottom:26px;
+}
+.hero-sub {color:var(--muted);font-size:1rem;line-height:1.9;max-width:570px;margin:0 auto}
+.hero-sub strong {color:var(--white);font-weight:500}
+.hero-actions {display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:32px}
+.btn {
+  border:1px solid var(--border);border-radius:50px;padding:14px 22px;
+  display:inline-flex;align-items:center;justify-content:center;gap:9px;
+  background:transparent;transition:transform .2s,border .2s,background .2s;
+}
+.btn:hover {transform:translateY(-3px);border-color:var(--purple)}
+.btn.primary {background:var(--purple);color:#100b1d;border-color:var(--purple)}
+.btn.primary:hover {background:#c4b1ff}
+.hero-note {margin-top:58px;color:#777387;font-size:.72rem;letter-spacing:2px}
+.scroll-line {width:1px;height:36px;background:linear-gradient(var(--pink),transparent);margin:14px auto 0}
+.glass {
+  background:linear-gradient(145deg,rgba(255,255,255,.045),rgba(255,255,255,.012));
+  border:1px solid var(--border);border-radius:var(--radius);
+}
+
+
+/* =========================================================
+   DISTANCIA — NUESTRO MAPA
+========================================================= */
+
+.distance-section {
+  position: relative;
+  padding: 150px 0 160px;
+  overflow: hidden;
+  background:
+    radial-gradient(
+      circle at 50% 45%,
+      rgba(167, 139, 250, 0.07),
+      transparent 38%
+    ),
+    linear-gradient(
+      180deg,
+      #09090f 0%,
+      #0b0a12 50%,
+      #09090f 100%
+    );
+}
+
+
+/* Número gigante de fondo */
+
+.distance-bg-number {
+  position: absolute;
+  top: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  font-family: "Montserrat", sans-serif;
+  font-size: clamp(120px, 22vw, 360px);
+  font-weight: 900;
+  letter-spacing: -0.08em;
+
+  color: rgba(255,255,255,0.018);
+
+  pointer-events: none;
+  user-select: none;
+}
+
+
+/* HEADER */
+
+.distance-head {
+  position: relative;
+  z-index: 2;
+  max-width: 850px;
+  margin: 0 auto 65px;
+  text-align: center;
+}
+
+.distance-head .eyebrow {
+  margin-bottom: 20px;
+}
+
+.distance-head h2 {
+  font-size: clamp(38px, 5vw, 68px);
+  line-height: 0.98;
+  letter-spacing: -0.045em;
+  margin-bottom: 24px;
+}
+
+.distance-head p {
+  max-width: 600px;
+  margin: 0 auto;
+  color: var(--muted);
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+
+/* CARD */
+
+.distance-card {
+  position: relative;
+  z-index: 2;
+
+  max-width: 1120px;
+  margin: auto;
+
+  border: 1px solid rgba(201,184,255,0.13);
+  border-radius: 32px;
+
+  background:
+    radial-gradient(
+      circle at 50% 35%,
+      rgba(167,139,250,0.075),
+      transparent 35%
+    ),
+    linear-gradient(
+      145deg,
+      rgba(255,255,255,0.045),
+      rgba(255,255,255,0.018)
+    );
+
+  backdrop-filter: blur(22px);
+  -webkit-backdrop-filter: blur(22px);
+
+  box-shadow:
+    0 35px 100px rgba(0,0,0,0.38),
+    inset 0 1px 0 rgba(255,255,255,0.035);
+
+  overflow: hidden;
+}
+
+
+/* TOP */
+
+.distance-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px 28px;
+
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+
+  color: rgba(248,246,255,0.38);
+
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.22em;
+}
+
+
+/* PLACES */
+
+.distance-places {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+
+  padding: 55px 55px 25px;
+}
+
+
+/* PLACE */
+
+.distance-place {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.distance-place.right {
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.place-icon {
+  width: 64px;
+  height: 64px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 20px;
+
+  background: rgba(255,255,255,0.045);
+  border: 1px solid rgba(255,255,255,0.08);
+
+  font-size: 29px;
+
+  box-shadow:
+    0 12px 30px rgba(0,0,0,0.2);
+}
+
+.place-info {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.place-info .place-letter {
+  color: var(--purple);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+}
+
+.place-info strong {
+  color: var(--white);
+  font-family: "Cormorant Garamond", serif;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.place-info small {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+
+/* CENTRO */
+
+.distance-middle {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 17px;
+}
+
+.distance-line-top {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  color: rgba(255,255,255,0.5);
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.line-dot {
+  width: 6px;
+  height: 6px;
+
+  border-radius: 50%;
+
+  background: var(--purple);
+
+  box-shadow:
+    0 0 12px rgba(167,139,250,0.7);
+}
+
+.line-glow {
+  width: 110px;
+  height: 1px;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(167,139,250,0),
+      rgba(242,184,203,0.9),
+      rgba(167,139,250,0)
+    );
+
+  box-shadow:
+    0 0 14px rgba(167,139,250,0.35);
+}
+
+
+.distance-heart {
+  width: 42px;
+  height: 42px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 50%;
+
+  color: var(--pink);
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(242,184,203,0.14),
+      rgba(167,139,250,0.06)
+    );
+
+  border: 1px solid rgba(242,184,203,0.18);
+
+  box-shadow:
+    0 0 25px rgba(242,184,203,0.12);
+
+  animation: distanceHeart 2.6s ease-in-out infinite;
+}
+
+.distance-heart i {
+  font-size: 14px;
+}
+
+@keyframes distanceHeart {
+  0%,100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.08);
+  }
+}
+
+
+/* DISTANCIA CENTRAL */
+
+.distance-main {
+  position: relative;
+
+  margin: 15px 55px 0;
+  padding: 55px 20px 50px;
+
+  text-align: center;
+
+  border-top: 1px solid rgba(255,255,255,0.06);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.distance-label {
+  margin-bottom: 10px;
+
+  color: rgba(255,255,255,0.38);
+
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.28em;
+}
+
+.distance-value {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 14px;
+}
+
+.distance-value span {
+  font-family: "Montserrat", sans-serif;
+
+  font-size: clamp(48px, 7vw, 88px);
+  font-weight: 800;
+  letter-spacing: -0.055em;
+
+  background:
+    linear-gradient(
+      110deg,
+      #f8f6ff,
+      #cbb8ff 45%,
+      #f2b8cb
+    );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+
+  text-shadow:
+    0 0 40px rgba(167,139,250,0.12);
+}
+
+.distance-value small {
+  color: var(--gold);
+
+  font-size: 15px;
+  font-weight: 700;
+
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.distance-main p {
+  margin-top: 8px;
+
+  color: var(--muted);
+  font-size: 12px;
+}
+
+
+/* FRASE */
+
+.distance-message {
+  position: relative;
+
+  max-width: 680px;
+  margin: 45px auto 50px;
+
+  padding: 0 30px;
+
+  text-align: center;
+}
+
+.quote-mark {
+  position: absolute;
+
+  top: -35px;
+  left: 0;
+
+  font-family: Georgia, serif;
+  font-size: 90px;
+  line-height: 1;
+
+  color: rgba(167,139,250,0.08);
+}
+
+.distance-message p {
+  position: relative;
+
+  margin: 0;
+
+  color: rgba(248,246,255,0.78);
+
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(24px, 3vw, 34px);
+  line-height: 1.25;
+}
+
+.quote-sign {
+  margin-top: 20px;
+
+  color: rgba(255,255,255,0.35);
+
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.25em;
+}
+
+.quote-sign span {
+  color: var(--pink);
+  margin: 0 7px;
+}
+
+
+/* DETALLES */
+
+.distance-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  margin: 0 55px;
+
+  border-top: 1px solid rgba(255,255,255,0.06);
+}
+
+.distance-detail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  padding: 25px 15px;
+
+  border-right: 1px solid rgba(255,255,255,0.06);
+}
+
+.distance-detail:last-child {
+  border-right: none;
+}
+
+.detail-icon {
+  width: 38px;
+  height: 38px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 12px;
+
+  color: var(--purple);
+
+  background: rgba(167,139,250,0.07);
+  border: 1px solid rgba(167,139,250,0.12);
+}
+
+.distance-detail div {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.distance-detail strong {
+  color: var(--white);
+  font-size: 12px;
+}
+
+.distance-detail small {
+  color: var(--muted);
+  font-size: 10px;
+}
+
+
+/* NOTA */
+
+.distance-note {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+
+  padding: 18px 25px;
+
+  background: rgba(0,0,0,0.14);
+
+  color: rgba(255,255,255,0.3);
+
+  font-size: 10px;
+  line-height: 1.6;
+
+  text-align: center;
+}
+
+.distance-note i {
+  color: rgba(167,139,250,0.6);
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 800px) {
+
+  .distance-section {
+    padding: 110px 0;
+  }
+
+  .distance-card {
+    border-radius: 24px;
+  }
+
+  .distance-card-top {
+    padding: 16px 20px;
+
+    font-size: 8px;
+  }
+
+  .distance-places {
+    grid-template-columns: 1fr;
+
+    gap: 28px;
+
+    padding: 35px 25px 25px;
+  }
+
+  .distance-place,
+  .distance-place.right {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .distance-middle {
+    order: 3;
+  }
+
+  .distance-place.right {
+    order: 2;
+  }
+
+  .distance-place.left {
+    order: 1;
+  }
+
+  .distance-middle {
+    order: 2;
+  }
+
+  .line-glow {
+    width: 150px;
+  }
+
+  .distance-main {
+    margin: 10px 25px 0;
+    padding: 45px 10px;
+  }
+
+  .distance-details {
+    grid-template-columns: 1fr;
+
+    margin: 0 25px;
+  }
+
+  .distance-detail {
+    border-right: none;
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+  }
+
+  .distance-detail:last-child {
+    border-bottom: none;
+  }
+
+  .distance-message {
+    margin: 40px auto;
+    padding: 0 25px;
+  }
+
+  .distance-note {
+    align-items: flex-start;
+    text-align: left;
+  }
+}
+
+
+@media (max-width: 480px) {
+
+  .distance-head h2 {
+    font-size: 38px;
+  }
+
+  .distance-value {
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+  }
+
+  .distance-value span {
+    font-size: 49px;
+  }
+
+  .distance-place {
+    gap: 12px;
+  }
+
+  .place-icon {
+    width: 54px;
+    height: 54px;
+    font-size: 24px;
+  }
+
+  .place-info strong {
+    font-size: 24px;
+  }
+
+  .distance-card-top span:last-child {
+    display: none;
+  }
+}
+
+/* =========================================================
+   HERO — NUESTRO UNIVERSO
+   ========================================================= */
+
+.hero {
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 120px 0 60px;
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+/* ---------------------------------------------------------
+   LUCES DE FONDO
+   --------------------------------------------------------- */
+
+.hero-glow {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  filter: blur(90px);
+  opacity: .35;
+  z-index: -2;
+}
+
+.hero-glow-1 {
+  width: 500px;
+  height: 500px;
+  left: -220px;
+  top: 10%;
+  background: rgba(117, 83, 203, .18);
+}
+
+.hero-glow-2 {
+  width: 430px;
+  height: 430px;
+  right: -200px;
+  bottom: 5%;
+  background: rgba(242, 184, 203, .10);
+}
+
+/* ---------------------------------------------------------
+   ESTRELLAS DECORATIVAS
+   --------------------------------------------------------- */
+
+.hero-stars {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.hero-stars span {
+  position: absolute;
+  color: rgba(232, 201, 134, .55);
+  font-family: "Cormorant Garamond", serif;
+  animation: heroStarFloat 5s ease-in-out infinite;
+}
+
+.hero-stars span:nth-child(1) {
+  left: 12%;
+  top: 22%;
+  font-size: 1.3rem;
+}
+
+.hero-stars span:nth-child(2) {
+  left: 23%;
+  top: 68%;
+  font-size: .9rem;
+  color: rgba(242,184,203,.5);
+}
+
+.hero-stars span:nth-child(3) {
+  left: 7%;
+  top: 47%;
+  font-size: .7rem;
+}
+
+.hero-stars span:nth-child(4) {
+  right: 14%;
+  top: 26%;
+  font-size: 1.1rem;
+  color: rgba(167,139,250,.7);
+}
+
+.hero-stars span:nth-child(5) {
+  right: 24%;
+  top: 63%;
+  font-size: .8rem;
+}
+
+.hero-stars span:nth-child(6) {
+  right: 8%;
+  top: 46%;
+  font-size: 1.4rem;
+  color: rgba(242,184,203,.45);
+}
+
+.hero-stars span:nth-child(7) {
+  left: 31%;
+  top: 16%;
+  font-size: .65rem;
+}
+
+.hero-stars span:nth-child(8) {
+  right: 34%;
+  top: 15%;
+  font-size: .6rem;
+}
+
+@keyframes heroStarFloat {
+  0%,100% {
+    transform: translateY(0);
+    opacity: .4;
+  }
+
+  50% {
+    transform: translateY(-10px);
+    opacity: .9;
+  }
+}
+
+/* ---------------------------------------------------------
+   CONTENIDO
+   --------------------------------------------------------- */
+
+.hero-content {
+  width: min(1000px, calc(100% - 40px));
+  margin: auto;
+  position: relative;
+  z-index: 2;
+}
+
+/* ---------------------------------------------------------
+   FECHA SUPERIOR
+   --------------------------------------------------------- */
+
+.hero-topline {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.hero-topline span {
+  width: 45px;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(232,201,134,.5)
+  );
+}
+
+.hero-topline span:last-child {
+  background: linear-gradient(
+    90deg,
+    rgba(232,201,134,.5),
+    transparent
+  );
+}
+
+.hero-topline p {
+  color: var(--gold);
+  font-size: .62rem;
+  letter-spacing: 4px;
+  font-weight: 500;
+}
+
+/* ---------------------------------------------------------
+   ORBITA
+   --------------------------------------------------------- */
+
+.hero-orbit {
+  width: 105px;
+  height: 105px;
+  position: relative;
+  margin: 0 auto 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Anillos */
+
+.orbit-ring {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 1px solid rgba(167,139,250,.18);
+}
+
+.ring-1 {
+  transform: rotate(20deg) scaleX(1.35);
+}
+
+.ring-2 {
+  transform: rotate(-35deg) scaleX(1.35);
+  border-color: rgba(242,184,203,.15);
+}
+
+.ring-3 {
+  transform: scale(.72);
+  border-color: rgba(232,201,134,.15);
+}
+
+/* Corazón */
+
+.orbit-heart {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+
+  background:
+    radial-gradient(
+      circle at 35% 30%,
+      #d7c7ff,
+      #8462ce 55%,
+      #4b317c
+    );
+
+  color: white;
+  font-size: 1.15rem;
+
+  box-shadow:
+    0 0 25px rgba(167,139,250,.25),
+    0 0 60px rgba(167,139,250,.10);
+
+  animation: heartFloat 4s ease-in-out infinite;
+}
+
+@keyframes heartFloat {
+  0%,100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+/* Puntos orbitales */
+
+.orbit-dot {
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+
+.dot-1 {
+  top: 2px;
+  left: 26px;
+  background: var(--gold);
+  box-shadow: 0 0 12px var(--gold);
+}
+
+.dot-2 {
+  bottom: 8px;
+  right: 9px;
+  background: var(--pink);
+  box-shadow: 0 0 12px var(--pink);
+}
+
+.dot-3 {
+  top: 38px;
+  left: -1px;
+  background: var(--blue);
+  box-shadow: 0 0 12px var(--blue);
+}
+
+/* ---------------------------------------------------------
+   EYEBROW
+   --------------------------------------------------------- */
+
+.hero-eyebrow {
+  justify-content: center;
+  gap: 13px;
+  color: var(--pink);
+  margin-bottom: 18px;
+  letter-spacing: 3.5px;
+}
+
+.eyebrow-line {
+  width: 24px;
+  height: 1px;
+  background: var(--pink);
+  opacity: .55;
+}
+
+/* ---------------------------------------------------------
+   NOMBRES
+   --------------------------------------------------------- */
+
+.hero-title {
+  margin: 0;
+  line-height: .75;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 500;
+  letter-spacing: -4px;
+}
+
+.hero-title .name {
+  display: block;
+  position: relative;
+}
+
+/* Jonathan */
+
+.name-jonathan {
+  font-size: clamp(4rem, 9vw, 7.5rem);
+
+  background: linear-gradient(
+    110deg,
+    #ffffff 15%,
+    #d7ceee 50%,
+    #aaa0c3 100%
+  );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* María */
+
+.name-maria {
+  font-size: clamp(4.3rem, 10vw, 8.3rem);
+
+  background: linear-gradient(
+    110deg,
+    #cbb8ff,
+    #f2b8cb 55%,
+    #e8c986
+  );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+
+  margin-top: 14px;
+}
+
+/* & */
+
+.ampersand {
+  font-size: clamp(2.4rem, 5vw, 4rem);
+  line-height: .5;
+  color: var(--pink);
+  font-weight: 400;
+  margin: 7px 0 3px;
+
+  text-shadow:
+    0 0 25px rgba(242,184,203,.22);
+}
+
+/* ---------------------------------------------------------
+   DESCRIPCIÓN
+   --------------------------------------------------------- */
+
+.hero-description {
+  max-width: 650px;
+  margin: 35px auto 0;
+}
+
+.hero-main-text {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(1.35rem, 3vw, 1.8rem);
+  line-height: 1.45;
+  color: #e9e5f2;
+}
+
+.hero-main-text span {
+  color: var(--pink);
+}
+
+.hero-secondary-text {
+  max-width: 530px;
+  margin: 15px auto 0;
+  color: var(--muted);
+  font-size: .8rem;
+  line-height: 1.8;
+}
+
+.hero-secondary-text strong {
+  color: var(--gold);
+  font-weight: 500;
+}
+
+/* ---------------------------------------------------------
+   MINI CONTADOR
+   --------------------------------------------------------- */
+
+.hero-mini-counter {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 23px;
+
+  margin-top: 30px;
+  padding: 13px 25px;
+
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 50px;
+
+  background: rgba(255,255,255,.025);
+  backdrop-filter: blur(10px);
+}
+
+.mini-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.mini-item strong {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--white);
+}
+
+.mini-item span {
+  font-size: .62rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.mini-separator {
+  color: var(--pink);
+  font-size: .9rem;
+}
+
+/* ---------------------------------------------------------
+   BOTONES
+   --------------------------------------------------------- */
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 32px;
+}
+
+.hero-main-button,
+.hero-secondary-button {
+  min-height: 52px;
+  padding: 0 22px;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 11px;
+
+  border-radius: 50px;
+  font-size: .78rem;
+  transition:
+    transform .25s ease,
+    box-shadow .25s ease,
+    border-color .25s ease;
+}
+
+.hero-main-button {
+  color: #110c19;
+
+  background: linear-gradient(
+    110deg,
+    #a78bfa,
+    #c5b2ff 55%,
+    #f2b8cb
+  );
+
+  box-shadow:
+    0 8px 30px rgba(167,139,250,.12);
+}
+
+.hero-main-button:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    0 12px 35px rgba(167,139,250,.23);
+}
+
+.hero-secondary-button {
+  color: #ddd8e8;
+  border: 1px solid rgba(255,255,255,.12);
+  background: rgba(255,255,255,.025);
+}
+
+.hero-secondary-button:hover {
+  transform: translateY(-4px);
+  border-color: rgba(242,184,203,.4);
+  color: var(--pink);
+}
+
+/* ---------------------------------------------------------
+   PARTE INFERIOR
+   --------------------------------------------------------- */
+
+.hero-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+
+  margin-top: 52px;
+}
+
+.hero-bottom p {
+  font-size: .56rem;
+  color: #777286;
+  letter-spacing: 2.5px;
+  white-space: nowrap;
+}
+
+.hero-bottom p span {
+  color: var(--pink);
+}
+
+.hero-line {
+  width: 45px;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255,255,255,.15)
+  );
+}
+
+.hero-line:last-child {
+  background: linear-gradient(
+    90deg,
+    rgba(255,255,255,.15),
+    transparent
+  );
+}
+
+/* ---------------------------------------------------------
+   SCROLL
+   --------------------------------------------------------- */
+
+.hero-scroll {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+
+  margin-top: 30px;
+
+  color: #656172;
+  font-size: .55rem;
+  letter-spacing: 2px;
+}
+
+.hero-scroll i {
+  color: var(--pink);
+  animation: scrollArrow 1.8s ease-in-out infinite;
+}
+
+@keyframes scrollArrow {
+
+  0%,100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(5px);
+  }
+
+}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media(max-width:600px) {
+
+  .hero {
+    padding-top: 105px;
+  }
+
+  .hero-content {
+    width: calc(100% - 28px);
+  }
+
+  .hero-topline {
+    margin-bottom: 20px;
+  }
+
+  .hero-topline p {
+    letter-spacing: 2.5px;
+  }
+
+  .hero-orbit {
+    transform: scale(.85);
+    margin-bottom: 12px;
+  }
+
+  .hero-eyebrow {
+    font-size: .58rem;
+    letter-spacing: 2.3px;
+  }
+
+  .eyebrow-line {
+    width: 14px;
+  }
+
+  .hero-title {
+    letter-spacing: -2px;
+  }
+
+  .name-jonathan {
+    font-size: clamp(3.4rem, 16vw, 5rem);
+  }
+
+  .name-maria {
+    font-size: clamp(3.8rem, 17vw, 5.4rem);
+    margin-top: 10px;
+  }
+
+  .ampersand {
+    font-size: 2.5rem;
+    margin: 5px 0;
+  }
+
+  .hero-description {
+    margin-top: 25px;
+  }
+
+  .hero-main-text {
+    font-size: 1.25rem;
+  }
+
+  .hero-secondary-text {
+    font-size: .74rem;
+  }
+
+  .hero-mini-counter {
+    gap: 13px;
+    padding: 11px 16px;
+  }
+
+  .mini-item strong {
+    font-size: 1.25rem;
+  }
+
+  .mini-item span {
+    font-size: .53rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-main-button,
+  .hero-secondary-button {
+    width: 100%;
+    max-width: 330px;
+  }
+
+  .hero-bottom {
+    margin-top: 35px;
+  }
+
+  .hero-bottom p {
+    font-size: .46rem;
+    letter-spacing: 1.5px;
+  }
+
+  .hero-line {
+    width: 20px;
+  }
+
+  .hero-scroll {
+    margin-top: 22px;
+  }
+
+}
+
+@media(prefers-reduced-motion:reduce) {
+
+  .hero-stars span,
+  .orbit-heart,
+  .hero-scroll i {
+    animation: none;
+  }
+
+}
+
+/* =========================================================
+   CONTADOR — NUESTRA HISTORIA
+   ========================================================= */
+
+.counter-section {
+  position: relative;
+  overflow: hidden;
+  padding: 120px 0;
+}
+
+/* ---------------------------------------------------------
+   NÚMEROS GIGANTES DEL FONDO
+   --------------------------------------------------------- */
+
+.counter-background-number {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: -2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7vw;
+  overflow: hidden;
+  opacity: .025;
+}
+
+.counter-background-number span {
+  font-family: "Cormorant Garamond", serif;
+  font-size: clamp(15rem, 35vw, 35rem);
+  line-height: 1;
+  font-weight: 600;
+}
+
+/* ---------------------------------------------------------
+   ENCABEZADO
+   --------------------------------------------------------- */
+
+.counter-heading {
+  margin-bottom: 50px;
+}
+
+.counter-heading .eyebrow {
+  justify-content: center;
+}
+
+.counter-heading h2 {
+  font-size: clamp(3rem, 6vw, 5rem);
+  margin-bottom: 15px;
+}
+
+.counter-heading p {
+  font-size: .9rem;
+  line-height: 1.9;
+}
+
+/* ---------------------------------------------------------
+   TARJETA PRINCIPAL
+   --------------------------------------------------------- */
+
+.counter-main-card {
+  position: relative;
+  max-width: 920px;
+  margin: auto;
+
+  padding: 45px 45px 30px;
+
+  text-align: center;
+
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 50% 42%,
+      rgba(117,83,203,.12),
+      transparent 38%
+    ),
+    linear-gradient(
+      145deg,
+      rgba(255,255,255,.045),
+      rgba(255,255,255,.012)
+    );
+
+  border-color: rgba(167,139,250,.15);
+}
+
+/* Brillo superior */
+
+.counter-main-card::before {
+  content: "";
+
+  position: absolute;
+
+  width: 400px;
+  height: 400px;
+
+  left: 50%;
+  top: 35%;
+
+  transform: translate(-50%,-50%);
+
+  border-radius: 50%;
+
+  background: rgba(167,139,250,.06);
+
+  filter: blur(70px);
+
+  pointer-events: none;
+}
+
+/* ---------------------------------------------------------
+   FECHA
+   --------------------------------------------------------- */
+
+.counter-date-top {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 13px;
+
+  color: var(--muted);
+
+  font-size: .59rem;
+  letter-spacing: 3px;
+}
+
+.date-dot {
+  width: 5px;
+  height: 5px;
+
+  border-radius: 50%;
+
+  background: var(--gold);
+
+  box-shadow:
+    0 0 10px rgba(232,201,134,.7);
+}
+
+.date-line {
+  width: 35px;
+  height: 1px;
+
+  background: rgba(255,255,255,.12);
+}
+
+/* ---------------------------------------------------------
+   DÍAS
+   --------------------------------------------------------- */
+
+.counter-center {
+  position: relative;
+
+  margin-top: 48px;
+}
+
+.counter-label {
+  color: var(--pink);
+
+  font-size: .65rem;
+  letter-spacing: 5px;
+
+  margin-bottom: 5px;
+}
+
+.days-container {
+  display: flex;
+
+  align-items: baseline;
+  justify-content: center;
+
+  gap: 15px;
+}
+
+.days-container strong {
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: clamp(7rem, 17vw, 13rem);
+
+  line-height: .8;
+
+  font-weight: 500;
+
+  letter-spacing: -7px;
+
+  background:
+    linear-gradient(
+      120deg,
+      #ffffff,
+      #cfc1f5 45%,
+      #f2b8cb
+    );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  color: transparent;
+
+  text-shadow:
+    0 0 60px rgba(167,139,250,.08);
+}
+
+.days-word {
+  font-family: "Cormorant Garamond", serif;
+
+  color: var(--pink);
+
+  font-size: clamp(1.4rem, 3vw, 2rem);
+
+  transform: translateY(-5px);
+}
+
+.counter-description {
+  color: var(--muted);
+
+  font-size: .78rem;
+
+  margin-top: 15px;
+
+  font-style: italic;
+}
+
+/* ---------------------------------------------------------
+   HORAS MINUTOS SEGUNDOS
+   --------------------------------------------------------- */
+
+.counter-small {
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 27px;
+
+  margin-top: 45px;
+
+  padding-top: 27px;
+
+  border-top: 1px solid rgba(255,255,255,.07);
+}
+
+.small-time {
+  min-width: 75px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+}
+
+.small-time strong {
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: 2.8rem;
+
+  font-weight: 500;
+
+  color: var(--white);
+
+  line-height: 1;
+}
+
+.small-time span {
+  margin-top: 7px;
+
+  font-size: .56rem;
+
+  color: var(--muted);
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+}
+
+.time-separator {
+  color: var(--pink);
+
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: 1.5rem;
+
+  opacity: .6;
+}
+
+/* ---------------------------------------------------------
+   PARTE INFERIOR DE LA TARJETA
+   --------------------------------------------------------- */
+
+.counter-bottom {
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 17px;
+
+  margin-top: 35px;
+
+  padding-top: 25px;
+
+  border-top: 1px solid rgba(255,255,255,.05);
+}
+
+.counter-bottom p {
+  color: #8f8a9d;
+
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: 1.05rem;
+
+  font-style: italic;
+}
+
+.counter-bottom strong {
+  color: #c9c0d9;
+
+  font-weight: 500;
+}
+
+.counter-heart {
+  color: var(--pink);
+
+  font-size: .65rem;
+
+  opacity: .65;
+}
+
+/* ---------------------------------------------------------
+   LÍNEA DEL TIEMPO
+   --------------------------------------------------------- */
+
+.relationship-timeline {
+  max-width: 850px;
+
+  margin: 75px auto 0;
+
+  display: grid;
+
+  grid-template-columns: 1fr 35px 1fr 35px 1fr;
+
+  align-items: center;
+
+  gap: 0;
+}
+
+.timeline-item {
+  text-align: center;
+
+  padding: 10px;
+}
+
+.timeline-icon {
+  width: 54px;
+  height: 54px;
+
+  margin: 0 auto 17px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 50%;
+
+  border: 1px solid rgba(255,255,255,.09);
+
+  background: rgba(255,255,255,.025);
+
+  color: var(--blue);
+
+  transition: .3s;
+}
+
+.timeline-item:hover .timeline-icon {
+  transform: translateY(-4px);
+
+  border-color: rgba(242,184,203,.35);
+
+  color: var(--pink);
+
+  box-shadow:
+    0 8px 25px rgba(242,184,203,.08);
+}
+
+.timeline-item.active .timeline-icon {
+  background:
+    radial-gradient(
+      circle,
+      rgba(117,83,203,.35),
+      rgba(117,83,203,.08)
+    );
+
+  border-color: rgba(167,139,250,.35);
+
+  color: var(--pink);
+
+  box-shadow:
+    0 0 30px rgba(167,139,250,.1);
+}
+
+.timeline-content span {
+  display: block;
+
+  color: var(--gold);
+
+  font-size: .53rem;
+
+  letter-spacing: 2px;
+
+  margin-bottom: 8px;
+}
+
+.timeline-content h3 {
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: 1.35rem;
+
+  font-weight: 500;
+
+  margin-bottom: 9px;
+}
+
+.timeline-content p {
+  color: var(--muted);
+
+  font-size: .72rem;
+
+  line-height: 1.7;
+}
+
+.timeline-line {
+  height: 1px;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(167,139,250,.35),
+      transparent
+    );
+
+  position: relative;
+}
+
+.timeline-line span {
+  position: absolute;
+
+  width: 5px;
+  height: 5px;
+
+  border-radius: 50%;
+
+  background: var(--pink);
+
+  left: 50%;
+  top: -2px;
+
+  box-shadow:
+    0 0 10px rgba(242,184,203,.7);
+}
+
+/* ---------------------------------------------------------
+   NOTA FINAL
+   --------------------------------------------------------- */
+
+.counter-love-note {
+  max-width: 700px;
+
+  margin: 70px auto 0;
+
+  text-align: center;
+
+  border-left: 0;
+
+  border-top: 1px solid rgba(242,184,203,.12);
+
+  border-bottom: 1px solid rgba(242,184,203,.12);
+
+  padding: 35px 25px;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(242,184,203,.025),
+      transparent
+    );
+}
+
+.counter-love-note .note-decoration {
+  color: var(--gold);
+
+  font-size: 1rem;
+
+  margin-bottom: 15px;
+}
+
+.counter-love-note p {
+  font-family: "Cormorant Garamond", serif;
+
+  color: #c7c1d2;
+
+  font-size: clamp(1.1rem, 2vw, 1.35rem);
+
+  line-height: 1.8;
+
+  font-style: italic;
+}
+
+.counter-love-note > span {
+  display: block;
+
+  margin-top: 18px;
+
+  color: var(--pink);
+
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: 1.1rem;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media(max-width:800px) {
+
+  .counter-main-card {
+    padding: 32px 20px 25px;
+  }
+
+  .counter-date-top {
+    gap: 8px;
+
+    font-size: .5rem;
+
+    letter-spacing: 2px;
+  }
+
+  .date-line {
+    width: 15px;
+  }
+
+  .counter-center {
+    margin-top: 38px;
+  }
+
+  .counter-small {
+    gap: 15px;
+  }
+
+  .small-time {
+    min-width: 55px;
+  }
+
+  .small-time strong {
+    font-size: 2.2rem;
+  }
+
+  .relationship-timeline {
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+  }
+
+  .timeline-line {
+    width: 1px;
+    height: 35px;
+
+    margin: auto;
+
+    background:
+      linear-gradient(
+        180deg,
+        transparent,
+        rgba(167,139,250,.35),
+        transparent
+      );
+  }
+
+  .timeline-line span {
+    left: -2px;
+    top: 50%;
+  }
+
+  .timeline-item {
+    max-width: 360px;
+    margin: auto;
+  }
+
+}
+
+@media(max-width:500px) {
+
+  .counter-section {
+    padding: 85px 0;
+  }
+
+  .counter-heading {
+    margin-bottom: 35px;
+  }
+
+  .counter-heading h2 {
+    font-size: 2.7rem;
+  }
+
+  .counter-heading p {
+    font-size: .76rem;
+  }
+
+  .counter-date-top {
+    flex-wrap: wrap;
+    line-height: 1.8;
+  }
+
+  .days-container {
+    gap: 8px;
+  }
+
+  .days-container strong {
+    font-size: 6rem;
+    letter-spacing: -4px;
+  }
+
+  .days-word {
+    font-size: 1.2rem;
+  }
+
+  .counter-small {
+    gap: 7px;
+  }
+
+  .small-time {
+    min-width: 65px;
+  }
+
+  .small-time strong {
+    font-size: 1.8rem;
+  }
+
+  .small-time span {
+    font-size: .46rem;
+    letter-spacing: 1px;
+  }
+
+  .time-separator {
+    font-size: 1rem;
+  }
+
+  .counter-bottom {
+    gap: 7px;
+  }
+
+  .counter-bottom p {
+    font-size: .9rem;
+  }
+
+  .counter-heart {
+    display: none;
+  }
+
+  .counter-love-note {
+    padding: 27px 17px;
+  }
+
+}
+
+.counter-section {padding-top:20px}
+.counter-box {padding:42px 30px;text-align:center;position:relative;overflow:hidden}
+.counter-box::before {
+  content:"";position:absolute;width:250px;height:250px;border-radius:50%;
+  background:rgba(117,83,203,.12);filter:blur(60px);top:-150px;left:calc(50% - 125px);
+}
+.counter-title {font-size:.78rem;color:var(--muted);letter-spacing:2px;text-transform:uppercase}
+.counter {display:flex;justify-content:center;gap:clamp(12px,4vw,42px);margin:28px 0;flex-wrap:wrap}
+.time-unit {min-width:65px}
+.time-unit strong {
+  display:block;font-size:clamp(2.2rem,6vw,4rem);font-weight:400;
+  font-family:"Cormorant Garamond",serif;color:var(--white);
+}
+.time-unit span {font-size:.7rem;color:var(--muted);letter-spacing:1px;text-transform:uppercase}
+.counter-footer {font-family:"Cormorant Garamond",serif;font-size:1.3rem;color:var(--pink)}
+.counter-sub {font-size:.8rem;color:var(--muted);margin-top:10px}
+.love-note {
+  max-width:660px;margin:25px auto 0;padding:22px;
+  border-left:2px solid var(--pink);background:rgba(242,184,203,.035);
+  text-align:left;color:#d6d1e3;line-height:1.9;font-size:.91rem;
+}
+.distance-card {padding:35px}
+.distance-top {display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.city {display:flex;align-items:center;gap:13px}
+.flag {font-size:2rem}
+.city strong {display:block;font-size:1rem}
+.city span {display:block;color:var(--muted);font-size:.78rem;margin-top:5px}
+.distance-visual {padding:55px 0 35px;display:flex;align-items:center;gap:12px}
+.distance-person {
+  flex-shrink:0;width:45px;height:45px;border:1px solid var(--border);
+  border-radius:50%;display:grid;place-items:center;background:var(--panel2);
+  font-family:"Cormorant Garamond",serif;font-size:1.2rem;
+}
+.route {height:1px;flex:1;position:relative;background:linear-gradient(90deg,var(--purple),var(--pink),var(--gold))}
+.route::after {
+  content:"";position:absolute;width:8px;height:8px;border-radius:50%;
+  background:var(--pink);top:-3.5px;left:0;box-shadow:0 0 14px var(--pink);
+  animation:travel 5s linear infinite;
+}
+@keyframes travel {to{left:100%}}
+.distance-number {font-family:"Cormorant Garamond",serif;font-size:clamp(2rem,5vw,3.4rem);text-align:center}
+.distance-number small {font: .8rem "DM Sans",sans-serif;color:var(--muted)}
+.distance-caption {text-align:center;color:var(--muted);font-size:.8rem;margin-top:9px;line-height:1.7}
+.distance-warning {margin-top:20px;text-align:center;font-size:.72rem;color:#858196;line-height:1.7}
+.photo-carousel {position:relative}
+.photo-track {
+  display:grid;grid-auto-columns:calc(33.333% - 14px);grid-auto-flow:column;
+  gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;
+  scrollbar-width:none;padding:4px 2px 20px;
+}
+
+
+/* =========================================================
+   GALERÍA — NUESTRA GALERÍA DE RECUERDOS
+   ========================================================= */
+
+#fotos {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Brillos ambientales */
+#fotos::before,
+#fotos::after {
+  content: "";
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  filter: blur(100px);
+  opacity: .10;
+  pointer-events: none;
+}
+
+#fotos::before {
+  left: -220px;
+  top: 15%;
+  background: var(--purple);
+}
+
+#fotos::after {
+  right: -220px;
+  bottom: 5%;
+  background: var(--pink);
+}
+
+/* Encabezado */
+#fotos .section-head {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 42px;
+}
+
+#fotos .eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+#fotos .eyebrow::before {
+  content: "✦";
+  color: var(--pink);
+  font-size: .75rem;
+}
+
+#fotos .section-head h2 {
+  margin-top: 10px;
+}
+
+#fotos .section-head p {
+  max-width: 600px;
+}
+
+
+/* =========================================================
+   CONTENEDOR PRINCIPAL
+   ========================================================= */
+
+.photo-carousel {
+  position: relative;
+  z-index: 2;
+  padding: 8px 0 5px;
+}
+
+
+/* =========================================================
+   CARRUSEL
+   ========================================================= */
+
+.photo-track {
+  display: grid;
+  grid-auto-columns: calc(33.333% - 14px);
+  grid-auto-flow: column;
+  gap: 22px;
+
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+
+  scrollbar-width: none;
+
+  padding: 8px 4px 28px;
+
+  cursor: grab;
+  overscroll-behavior-x: contain;
+}
+
+.photo-track:active {
+  cursor: grabbing;
+}
+
+.photo-track::-webkit-scrollbar {
+  display: none;
+}
+
+
+/* =========================================================
+   TARJETA DE FOTO
+   ========================================================= */
+
+.photo-card {
+  min-width: 0;
+  position: relative;
+
+  scroll-snap-align: center;
+
+  border: 1px solid rgba(255,255,255,.10);
+  border-radius: 24px;
+
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255,255,255,.055),
+      rgba(255,255,255,.015)
+    );
+
+  box-shadow:
+    0 18px 45px rgba(0,0,0,.28),
+    inset 0 1px 0 rgba(255,255,255,.04);
+
+  backdrop-filter: blur(12px);
+
+  text-align: left;
+
+  transform: translateY(0);
+
+  transition:
+    transform .45s cubic-bezier(.2,.8,.2,1),
+    border-color .35s ease,
+    box-shadow .45s ease,
+    background .35s ease;
+}
+
+/* Brillo superior */
+.photo-card::before {
+  content: "";
+  position: absolute;
+  left: 18%;
+  right: 18%;
+  top: -1px;
+  height: 1px;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(242,184,203,.8),
+    rgba(167,139,250,.8),
+    transparent
+  );
+
+  opacity: .45;
+  z-index: 4;
+}
+
+.photo-card:hover {
+  transform: translateY(-9px);
+
+  border-color: rgba(242,184,203,.38);
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255,255,255,.075),
+      rgba(255,255,255,.025)
+    );
+
+  box-shadow:
+    0 25px 60px rgba(0,0,0,.42),
+    0 0 35px rgba(167,139,250,.08),
+    inset 0 1px 0 rgba(255,255,255,.06);
+}
+
+
+/* =========================================================
+   IMAGEN
+   ========================================================= */
+
+.photo-thumb {
+  height: 320px;
+  position: relative;
+
+  background:
+    radial-gradient(
+      circle at 50% 35%,
+      rgba(167,139,250,.18),
+      transparent 45%
+    ),
+    #12101d;
+
+  overflow: hidden;
+}
+
+/* Imagen */
+.photo-thumb img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  transition:
+    transform .8s cubic-bezier(.2,.7,.2,1),
+    filter .6s ease;
+}
+
+.photo-card:hover .photo-thumb img {
+  transform: scale(1.065);
+  filter: saturate(1.06) contrast(1.02);
+}
+
+
+/* =========================================================
+   DEGRADADO SOBRE LA FOTO
+   ========================================================= */
+
+.photo-thumb::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(5,5,10,.03) 35%,
+      rgba(5,5,10,.12) 55%,
+      rgba(5,5,10,.78) 100%
+    );
+
+  z-index: 1;
+
+  pointer-events: none;
+}
+
+/* Brillo suave */
+.photo-thumb::after {
+  content: "";
+  position: absolute;
+
+  width: 180px;
+  height: 180px;
+
+  right: -100px;
+  top: -100px;
+
+  border-radius: 50%;
+
+  background: rgba(242,184,203,.12);
+
+  filter: blur(40px);
+
+  opacity: .7;
+
+  transition:
+    transform .7s ease,
+    opacity .5s ease;
+
+  pointer-events: none;
+}
+
+.photo-card:hover .photo-thumb::after {
+  transform: scale(1.35);
+  opacity: 1;
+}
+
+
+/* =========================================================
+   BOTÓN PARA ABRIR FOTO
+   ========================================================= */
+
+.photo-open {
+  position: absolute;
+
+  right: 14px;
+  top: 14px;
+
+  z-index: 5;
+
+  width: 42px;
+  height: 42px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 50%;
+
+  background: rgba(7,7,14,.70);
+
+  border: 1px solid rgba(255,255,255,.18);
+
+  color: var(--white);
+
+  backdrop-filter: blur(12px);
+
+  box-shadow:
+    0 8px 20px rgba(0,0,0,.25);
+
+  cursor: pointer;
+
+  transition:
+    transform .3s ease,
+    background .3s ease,
+    border-color .3s ease,
+    color .3s ease;
+}
+
+.photo-open:hover {
+  transform: scale(1.08) rotate(3deg);
+
+  background: rgba(242,184,203,.14);
+
+  border-color: rgba(242,184,203,.55);
+
+  color: var(--pink);
+
+  box-shadow:
+    0 8px 25px rgba(242,184,203,.12);
+}
+
+.photo-open:active {
+  transform: scale(.94);
+}
+
+
+/* =========================================================
+   INFORMACIÓN DE LA FOTO
+   ========================================================= */
+
+.photo-info {
+  position: relative;
+
+  padding: 20px 20px 22px;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(17,17,27,.96),
+      rgba(13,13,22,.98)
+    );
+}
+
+.photo-info small {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+
+  color: var(--pink);
+
+  font-size: .65rem;
+  font-weight: 600;
+
+  letter-spacing: 1.8px;
+
+  text-transform: uppercase;
+}
+
+.photo-info small::before {
+  content: "";
+
+  width: 18px;
+  height: 1px;
+
+  background: linear-gradient(
+    90deg,
+    var(--pink),
+    transparent
+  );
+}
+
+.photo-info h3 {
+  margin: 8px 0 7px;
+
+  color: var(--white);
+
+  font-family: "Cormorant Garamond", serif;
+
+  font-size: 1.65rem;
+  line-height: 1.05;
+
+  font-weight: 500;
+
+  transition: color .3s ease;
+}
+
+.photo-card:hover .photo-info h3 {
+  color: var(--pink);
+}
+
+.photo-info p {
+  margin: 0;
+
+  color: var(--muted);
+
+  font-size: .77rem;
+  line-height: 1.7;
+}
+
+
+/* =========================================================
+   CONTROLES
+   ========================================================= */
+
+.carousel-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 12px;
+
+  margin-top: 4px;
+}
+
+
+/* Botones */
+.round-btn {
+  position: relative;
+
+  width: 46px;
+  height: 46px;
+
+  display: grid;
+  place-items: center;
+
+  border-radius: 50%;
+
+  border: 1px solid rgba(255,255,255,.12);
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255,255,255,.06),
+      rgba(255,255,255,.02)
+    );
+
+  color: var(--white);
+
+  box-shadow:
+    0 8px 22px rgba(0,0,0,.22);
+
+  backdrop-filter: blur(10px);
+
+  cursor: pointer;
+
+  transition:
+    transform .3s ease,
+    border-color .3s ease,
+    background .3s ease,
+    color .3s ease,
+    box-shadow .3s ease;
+}
+
+.round-btn:hover {
+  transform: translateY(-3px);
+
+  border-color: rgba(242,184,203,.55);
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(242,184,203,.12),
+      rgba(167,139,250,.08)
+    );
+
+  color: var(--pink);
+
+  box-shadow:
+    0 12px 28px rgba(0,0,0,.30),
+    0 0 20px rgba(242,184,203,.07);
+}
+
+.round-btn:active {
+  transform: translateY(0) scale(.93);
+}
+
+.round-btn i {
+  font-size: .85rem;
+}
+
+
+/* =========================================================
+   TEXTO INFERIOR
+   ========================================================= */
+
+.photo-hint {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+
+  text-align: center;
+
+  color: #777387;
+
+  font-size: .70rem;
+
+  margin: 18px 0 0;
+
+  opacity: .9;
+}
+
+.photo-hint i {
+  color: var(--pink);
+
+  animation:
+    galleryHand 2s ease-in-out infinite;
+}
+
+@keyframes galleryHand {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(4px);
+  }
+}
+
+
+/* =========================================================
+   EFECTO CUANDO HAY SCROLL
+   ========================================================= */
+
+.photo-track::before,
+.photo-track::after {
+  content: "";
+  display: block;
+  width: 2px;
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 1000px) {
+
+  .photo-track {
+    grid-auto-columns: calc(50% - 11px);
+    gap: 20px;
+  }
+
+  .photo-thumb {
+    height: 290px;
+  }
+
+}
+
+
+/* =========================================================
+   MÓVIL
+   ========================================================= */
+
+@media (max-width: 800px) {
+
+  #fotos .section-head {
+    margin-bottom: 30px;
+  }
+
+  .photo-track {
+    grid-auto-columns: 72%;
+    gap: 16px;
+
+    padding-left: 3px;
+    padding-right: 3px;
+  }
+
+  .photo-thumb {
+    height: 310px;
+  }
+
+  .photo-card {
+    border-radius: 21px;
+  }
+
+  .photo-info {
+    padding: 17px 18px 20px;
+  }
+
+  .photo-info h3 {
+    font-size: 1.5rem;
+  }
+
+  .carousel-controls {
+    margin-top: 2px;
+  }
+
+}
+
+
+/* =========================================================
+   MÓVIL PEQUEÑO
+   ========================================================= */
+
+@media (max-width: 520px) {
+
+  .photo-track {
+    grid-auto-columns: 86%;
+    gap: 14px;
+
+    padding-bottom: 22px;
+  }
+
+  .photo-thumb {
+    height: 330px;
+  }
+
+  .photo-open {
+    width: 40px;
+    height: 40px;
+
+    right: 12px;
+    top: 12px;
+  }
+
+  .photo-info {
+    padding: 16px 17px 19px;
+  }
+
+  .photo-info h3 {
+    font-size: 1.45rem;
+  }
+
+  .photo-info p {
+    font-size: .74rem;
+  }
+
+  .round-btn {
+    width: 43px;
+    height: 43px;
+  }
+
+  .photo-hint {
+    font-size: .66rem;
+  }
+
+}
+
+
+/* =========================================================
+   REDUCIR ANIMACIONES SI EL USUARIO LO PREFIERE
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .photo-track {
+    scroll-behavior: auto;
+  }
+
+  .photo-card,
+  .photo-thumb img,
+  .photo-open,
+  .round-btn {
+    transition: none;
+  }
+
+  .photo-hint i {
+    animation: none;
+  }
+
+}
+.photo-track::-webkit-scrollbar {display:none}
+.photo-card {
+  min-width:0;scroll-snap-align:start;border:1px solid var(--border);
+  border-radius:18px;overflow:hidden;background:var(--panel);
+  text-align:left;transition:transform .25s,border-color .25s;
+}
+.photo-card:hover {transform:translateY(-5px);border-color:rgba(242,184,203,.45)}
+.photo-thumb {height:290px;position:relative;background:#1c1730;overflow:hidden}
+.photo-thumb img {width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.photo-card:hover img {transform:scale(1.045)}
+.photo-thumb::after {
+  content:"";position:absolute;inset:40% 0 0;
+  background:linear-gradient(transparent,rgba(0,0,0,.5));pointer-events:none;
+}
+.photo-open {
+  position:absolute;right:13px;top:13px;z-index:1;
+  background:rgba(10,10,18,.72);border:1px solid #ffffff35;
+  width:37px;height:37px;border-radius:50%;display:grid;place-items:center;
+}
+.photo-info {padding:18px}
+.photo-info small {color:var(--pink);font-size:.69rem;letter-spacing:1px}
+.photo-info h3 {font-family:"Cormorant Garamond",serif;font-size:1.5rem;font-weight:500;margin:7px 0}
+.photo-info p {font-size:.78rem;color:var(--muted);line-height:1.6}
+.carousel-controls {display:flex;justify-content:center;gap:10px;margin-top:15px}
+.round-btn {
+  width:43px;height:43px;border-radius:50%;border:1px solid var(--border);
+  background:var(--panel);transition:.2s;
+}
+.round-btn:hover {border-color:var(--pink);color:var(--pink)}
+.photo-hint {text-align:center;color:#777387;font-size:.73rem;margin-top:14px}
+.memory-grid {display:grid;grid-template-columns:repeat(3,1fr);gap:17px}
+.memory-card {padding:25px;position:relative;overflow:hidden}
+.memory-card .memory-icon {font-size:1.3rem;color:var(--pink);margin-bottom:18px}
+.memory-card h3 {font-family:"Cormorant Garamond",serif;font-size:1.55rem;font-weight:500;margin-bottom:10px}
+.memory-card p {color:var(--muted);font-size:.83rem;line-height:1.8}
+.memory-date {display:inline-block;color:var(--gold);font-size:.72rem;margin-top:18px}
+.music-card {
+  display:grid;grid-template-columns:240px 1fr;gap:35px;align-items:center;padding:30px;
+}
+.album-art {
+  aspect-ratio:1;border-radius:17px;display:grid;place-items:center;
+  background:radial-gradient(circle at 50% 45%,#513778,#21182f 52%,#101019);
+  border:1px solid var(--border);position:relative;overflow:hidden;
+}
+.album-art::before,.album-art::after {
+  content:"";position:absolute;width:180px;height:180px;border:1px solid #ffffff18;border-radius:50%;
+}
+.album-art::after {width:125px;height:125px}
+.album-art i {font-size:3rem;color:var(--pink);z-index:1}
+.music-kicker {font-size:.72rem;color:var(--pink);letter-spacing:2px;text-transform:uppercase}
+.music-info h3 {font:500 clamp(2rem,4vw,3rem) "Cormorant Garamond",serif;margin:12px 0}
+.music-info p {color:var(--muted);font-size:.85rem;line-height:1.8}
+.audio {width:100%;margin-top:25px;accent-color:var(--purple)}
+.music-foot {font-size:.73rem!important;margin-top:10px}
+.letter {max-width:760px;margin:auto;padding:clamp(25px,5vw,55px);position:relative}
+.letter-mark {font:3rem "Cormorant Garamond",serif;color:var(--pink);line-height:1}
+.letter h3 {font:500 clamp(2rem,5vw,3rem) "Cormorant Garamond",serif;margin:18px 0}
+.letter p {color:#d0cbdd;line-height:2;font-size:.93rem;margin-bottom:17px}
+.letter-sign {font:italic 1.4rem "Cormorant Garamond",serif;color:var(--pink);margin-top:25px}
+.surprise-box {text-align:center;padding:45px 25px}
+.surprise-heart {
+  font-size:2rem;color:var(--pink);border:1px solid var(--border);
+  border-radius:50%;width:75px;height:75px;display:grid;place-items:center;
+  margin:0 auto 20px;animation:pulse 2s infinite;
+}
+@keyframes pulse {50%{box-shadow:0 0 28px #f2b8cb35;transform:scale(1.04)}}
+.surprise-box h3 {font:500 2rem "Cormorant Garamond",serif;margin-bottom:10px}
+.surprise-box p {color:var(--muted);font-size:.85rem;line-height:1.8;max-width:500px;margin:0 auto 22px}
+.surprise-message {display:none;max-width:550px;margin:25px auto 0;color:var(--pink);font:italic 1.5rem/1.7 "Cormorant Garamond",serif}
+.surprise-message.show {display:block;animation:appear .6s ease}
+@keyframes appear {from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+footer {padding:35px 0 45px;border-top:1px solid var(--border);text-align:center}
+.footer-brand {font:1.7rem "Cormorant Garamond",serif}
+footer p {font-size:.74rem;color:var(--muted);margin-top:9px;line-height:1.8}
+.heart-beat {display:inline-block;color:var(--pink);animation:pulse 1.8s infinite}
+
+/* Visor de fotografías */
+.modal {
+  position:fixed;inset:0;z-index:100;display:none;place-items:center;
+  padding:20px;background:rgba(3,3,8,.91);backdrop-filter:blur(15px);
+}
+.modal.open {display:grid;animation:appear .2s ease}
+.modal-panel {
+  width:min(1120px,100%);height:min(780px,92svh);position:relative;
+  display:grid;grid-template-columns:1.05fr .95fr;overflow:hidden;
+  background:#101019;border:1px solid #ffffff20;border-radius:20px;
+}
+.modal-close {
+  position:absolute;right:15px;top:15px;z-index:5;width:43px;height:43px;
+  border-radius:50%;background:#09090fc9;border:1px solid #ffffff30;
+}
+.modal-visual {min-width:0;background:#09090f;display:flex;align-items:center;justify-content:center;position:relative}
+.modal-visual img {width:100%;height:100%;object-fit:contain;max-height:100%}
+.modal-side {padding:35px;overflow-y:auto;display:flex;flex-direction:column}
+.modal-counter {font-size:.72rem;letter-spacing:2px;color:var(--pink)}
+.modal-side h3 {font:500 clamp(2rem,4vw,3.2rem) "Cormorant Garamond",serif;margin:12px 0 20px}
+.modal-description {font-size:.88rem;color:#c4bfd2;line-height:1.9}
+.modal-date {color:var(--gold);font-size:.75rem;margin-top:22px}
+.modal-nav {display:flex;gap:10px;margin-top:auto;padding-top:30px}
+.modal-nav .btn {padding:11px 15px;font-size:.8rem}
+.toast {
+  position:fixed;bottom:25px;left:50%;transform:translate(-50%,20px);
+  opacity:0;pointer-events:none;background:#211a31;border:1px solid var(--border);
+  border-radius:50px;padding:13px 20px;font-size:.82rem;z-index:200;transition:.3s;
+}
+.toast.show {opacity:1;transform:translate(-50%,0)}
+@media(max-width:800px) {
+  .nav-links {
+    display:none;position:absolute;top:72px;left:0;right:0;
+    padding:22px;background:#0e0d16;border-bottom:1px solid var(--border);
+    flex-direction:column;gap:22px;
+  }
+  .nav-links.active {display:flex}
+  .menu-btn {display:block}
+  section {padding:75px 0}
+  .photo-track {grid-auto-columns:calc(50% - 10px)}
+  .photo-thumb {height:250px}
+  .memory-grid {grid-template-columns:repeat(2,1fr)}
+  .music-card {grid-template-columns:170px 1fr;gap:22px}
+  .modal-panel {grid-template-columns:1fr;grid-template-rows:minmax(0,1fr) auto;height:92svh}
+  .modal-visual {min-height:0}
+  .modal-side {padding:20px 22px;max-height:43%;overflow-y:auto}
+  .modal-side h3 {margin:7px 0 10px}
+  .modal-description {font-size:.82rem}
+  .modal-date {margin-top:12px}
+  .modal-nav {padding-top:18px}
+}
+@media(max-width:520px) {
+  .wrap {width:calc(100% - 30px)}
+  .hero h1 {letter-spacing:-1.5px}
+  .hero-sub {font-size:.9rem}
+  .counter-box {padding:32px 12px}
+  .time-unit {min-width:58px}
+  .time-unit span {font-size:.61rem}
+  .distance-card {padding:22px 16px}
+  .city {gap:8px}
+  .flag {font-size:1.6rem}
+  .city strong {font-size:.85rem}
+  .city span {font-size:.69rem}
+  .photo-track {grid-auto-columns:82%}
+  .photo-thumb {height:300px}
+  .memory-grid {grid-template-columns:1fr}
+  .music-card {grid-template-columns:1fr;padding:22px}
+  .album-art {width:min(230px,100%);margin:auto}
+  .music-info {text-align:center}
+  .modal {padding:8px}
+  .modal-panel {height:95svh;border-radius:13px}
+  .modal-side {padding:15px;max-height:44%}
+  .modal-nav .btn {padding:10px;font-size:.74rem}
+}
+@media(prefers-reduced-motion:reduce) {
+  *,*::before,*::after {scroll-behavior:auto!important;animation:none!important;transition:none!important}
+}
+</style>
+</head>
+
+<body>
+<canvas id="stars" aria-hidden="true"></canvas>
+
+<nav>
+  <div class="wrap nav-inner">
+    <a href="#inicio" class="brand">J <span>&</span> M <span>♡</span></a>
+    <div class="nav-links" id="navLinks">
+      <a href="#historia">Nosotros</a>
+      <a href="#distancia">Distancia</a>
+      <a href="#fotos">Fotografías</a>
+      <a href="#recuerdos">Recuerdos</a>
+      <a href="#musica">Nuestra música</a>
+      <a href="#carta">Una carta</a>
+    </div>
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menú">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  </div>
+</nav>
+
+<main>
+<section class="hero" id="inicio">
+
+  <!-- Decoración de fondo -->
+  <div class="hero-glow hero-glow-1"></div>
+  <div class="hero-glow hero-glow-2"></div>
+
+  <div class="hero-stars">
+    <span>✦</span>
+    <span>✧</span>
+    <span>⋆</span>
+    <span>✦</span>
+    <span>·</span>
+    <span>✧</span>
+    <span>⋆</span>
+    <span>·</span>
+  </div>
+
+  <div class="wrap hero-content">
+
+    <!-- Pequeña etiqueta superior -->
+    <div class="hero-topline">
+      <span></span>
+      <p>22 · 08 · 2026</p>
+      <span></span>
+    </div>
+
+    <!-- Orbita central -->
+    <div class="hero-orbit">
+
+      <div class="orbit-ring ring-1"></div>
+      <div class="orbit-ring ring-2"></div>
+      <div class="orbit-ring ring-3"></div>
+
+      <div class="orbit-heart">
+        <i class="fa-solid fa-heart"></i>
+      </div>
+
+      <div class="orbit-dot dot-1"></div>
+      <div class="orbit-dot dot-2"></div>
+      <div class="orbit-dot dot-3"></div>
+
+    </div>
+
+    <div class="eyebrow hero-eyebrow">
+      <span class="eyebrow-line"></span>
+      Un universo que es solo nuestro
+      <span class="eyebrow-line"></span>
+    </div>
+
+    <!-- Título -->
+    <h1 class="hero-title">
+      <span class="name name-jonathan">Jonathan</span>
+
+      <span class="ampersand">&</span>
+
+      <span class="name name-maria">María</span>
+    </h1>
+
+    <!-- Frase -->
+    <div class="hero-description">
+
+      <p class="hero-main-text">
+        Dos corazones.
+        <span>Dos países.</span>
+        <br>
+        Y una historia que decidió encontrarnos.
+      </p>
+
+      <p class="hero-secondary-text">
+        Desde aquella noche del <strong>22 de agosto de 2026</strong>,
+        este pedacito del universo también lleva nuestros nombres.
+      </p>
+
+    </div>
+
+    <!-- Contador mini -->
+    <div class="hero-mini-counter">
+
+      <div class="mini-item">
+        <strong id="heroDays">00</strong>
+        <span>días juntos</span>
+      </div>
+
+      <div class="mini-separator">♡</div>
+
+      <div class="mini-item">
+        <strong>∞</strong>
+        <span>recuerdos por crear</span>
+      </div>
+
+    </div>
+
+    <!-- Botones -->
+    <div class="hero-actions">
+
+      <a class="hero-main-button" href="#historia">
+        <span>Descubrir nuestra historia</span>
+        <i class="fa-solid fa-arrow-down"></i>
+      </a>
+
+      <a class="hero-secondary-button" href="#fotos">
+        <i class="fa-regular fa-images"></i>
+        <span>Ver nuestros recuerdos</span>
+      </a>
+
+    </div>
+
+    <!-- Frase inferior -->
+    <div class="hero-bottom">
+
+      <div class="hero-line"></div>
+
+      <p>
+        HECHO CON AMOR
+        <span>·</span>
+        POR JONATHAN
+        <span>♡</span>
+        PARA MARÍA
+      </p>
+
+      <div class="hero-line"></div>
+
+    </div>
+
+    <div class="hero-scroll">
+      <span>SCROLL PARA ENTRAR</span>
+      <i class="fa-solid fa-chevron-down"></i>
+    </div>
+
+  </div>
+</section>
+
+<section class="counter-section" id="historia">
+
+  <div class="counter-background-number">
+    <span>22</span>
+    <span>08</span>
+    <span>26</span>
+  </div>
+
+  <div class="wrap">
+
+    <div class="section-head counter-heading">
+
+      <div class="eyebrow">
+        <span class="eyebrow-line"></span>
+        Aquella noche
+        <span class="eyebrow-line"></span>
+      </div>
+
+      <h2>
+        Desde que comenzó
+        <span class="gradient">lo nuestro</span>
+      </h2>
+
+      <p>
+        Una noche cualquiera para el mundo.
+        <br>
+        Una noche que para nosotros lo cambió todo.
+      </p>
+
+    </div>
+
+
+    <!-- CONTADOR PRINCIPAL -->
+
+    <div class="counter-main-card glass">
+
+      <div class="counter-date-top">
+        <span class="date-dot"></span>
+
+        <span>
+          22 DE AGOSTO DE 2026
+        </span>
+
+        <span class="date-line"></span>
+
+        <span>
+          23:30
+        </span>
+
+        <span class="date-dot"></span>
+      </div>
+
+
+      <div class="counter-center">
+
+        <p class="counter-label">
+          LLEVAMOS JUNTOS
+        </p>
+
+        <div class="days-container">
+
+          <strong id="days">00</strong>
+
+          <span class="days-word">
+            días
+          </span>
+
+        </div>
+
+        <p class="counter-description">
+          y cada uno de ellos tiene un pedacito de nosotros.
+        </p>
+
+      </div>
+
+
+      <!-- HORAS / MINUTOS / SEGUNDOS -->
+
+      <div class="counter-small">
+
+        <div class="small-time">
+
+          <strong id="hours">00</strong>
+
+          <span>Horas</span>
+
+        </div>
+
+        <div class="time-separator">
+          :
+        </div>
+
+        <div class="small-time">
+
+          <strong id="minutes">00</strong>
+
+          <span>Minutos</span>
+
+        </div>
+
+        <div class="time-separator">
+          :
+        </div>
+
+        <div class="small-time">
+
+          <strong id="seconds">00</strong>
+
+          <span>Segundos</span>
+
+        </div>
+
+      </div>
+
+
+      <!-- FRASE -->
+
+      <div class="counter-bottom">
+
+        <div class="counter-heart">
+          <i class="fa-solid fa-heart"></i>
+        </div>
+
+        <p>
+          Desde las <strong>11:30 de la noche</strong>,
+          mi tiempo también tiene tu nombre.
+        </p>
+
+        <div class="counter-heart">
+          <i class="fa-solid fa-heart"></i>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- MINI HISTORIA -->
+
+    <div class="relationship-timeline">
+
+      <div class="timeline-item">
+
+        <div class="timeline-icon">
+          <i class="fa-solid fa-gamepad"></i>
+        </div>
+
+        <div class="timeline-content">
+
+          <span>ANTES</span>
+
+          <h3>
+            Éramos dos desconocidos
+          </h3>
+
+          <p>
+            Una partida de Free Fire hizo que nuestros caminos
+            se cruzaran sin saber todo lo que vendría después.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="timeline-line">
+        <span></span>
+      </div>
+
+
+      <div class="timeline-item active">
+
+        <div class="timeline-icon">
+          <i class="fa-solid fa-heart"></i>
+        </div>
+
+        <div class="timeline-content">
+
+          <span>22 · 08 · 2026</span>
+
+          <h3>
+            Y entonces dijimos que sí
+          </h3>
+
+          <p>
+            11:30 p. m.
+            Una pregunta, dos corazones
+            y el comienzo de nuestra historia.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="timeline-line">
+        <span></span>
+      </div>
+
+
+      <div class="timeline-item future">
+
+        <div class="timeline-icon">
+          <i class="fa-solid fa-infinity"></i>
+        </div>
+
+        <div class="timeline-content">
+
+          <span>DESPUÉS</span>
+
+          <h3>
+            Todo lo que todavía nos falta vivir
+          </h3>
+
+          <p>
+            Más llamadas, más risas, más fotografías,
+            más recuerdos y algún día, menos kilómetros.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- NOTA FINAL -->
+
+    <div class="love-note counter-love-note">
+
+      <div class="note-decoration">
+        ✦
+      </div>
+
+      <p>
+        No quiero contar solamente los días que llevamos juntos.
+        <br>
+        Quiero que algún día podamos mirar atrás
+        y contar todos los días que elegimos seguir aquí.
+      </p>
+
+      <span>
+        — Jonathan ♡
+      </span>
+
+    </div>
+
+  </div>
+
+</section>
+
+  <section class="distance-section" id="distancia">
+  <div class="distance-bg-number">KM</div>
+
+  <div class="wrap">
+
+    <div class="section-head distance-head">
+      <div class="eyebrow">Lejos en el mapa · cerca en el corazón</div>
+
+      <h2>
+        Un océano entre nosotros,
+        <span class="gradient">pero no entre lo nuestro.</span>
+      </h2>
+
+      <p>
+        Tú allá, yo aquí.<br>
+        Y aun así, cada día encontramos una manera de sentirnos cerca.
+      </p>
+    </div>
+
+    <div class="distance-card">
+
+      <!-- ENCABEZADO -->
+      <div class="distance-card-top">
+        <span>LA DISTANCIA QUE NOS SEPARA</span>
+        <span>∞ LA HISTORIA QUE NOS UNE</span>
+      </div>
+
+      <!-- LUGARES -->
+      <div class="distance-places">
+
+        <div class="distance-place left">
+          <div class="place-icon">
+            🇪🇨
+          </div>
+
+          <div class="place-info">
+            <span class="place-letter">J</span>
+            <strong>Jonathan</strong>
+            <small>Ambato, Ecuador</small>
+          </div>
+        </div>
+
+
+        <div class="distance-middle">
+
+          <div class="distance-line-top">
+            <span>J</span>
+            <div class="line-dot"></div>
+            <div class="line-glow"></div>
+            <div class="line-dot"></div>
+            <span>M</span>
+          </div>
+
+          <div class="distance-heart">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+
+        </div>
+
+
+        <div class="distance-place right">
+
+          <div class="place-info">
+            <span class="place-letter">M</span>
+            <strong>María</strong>
+            <small>Guerrero Negro, México</small>
+          </div>
+
+          <div class="place-icon">
+            🇲🇽
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- DISTANCIA -->
+      <div class="distance-main">
+
+        <div class="distance-label">
+          <span>ENTRE NOSOTROS HAY</span>
+        </div>
+
+        <div class="distance-value">
+          <span id="distanceMeters">Calculando...</span>
+          <small>metros</small>
+        </div>
+
+        <p>
+          aproximadamente en línea recta
+        </p>
+
+      </div>
+
+
+      <!-- FRASE -->
+      <div class="distance-message">
+
+        <div class="quote-mark">“</div>
+
+        <p>
+          Puede que el mapa diga que estamos lejos,
+          pero nunca ha sabido medir la distancia
+          que hay entre dos personas que quieren estar juntas.
+        </p>
+
+        <div class="quote-sign">
+          J <span>♡</span> M
+        </div>
+
+      </div>
+
+
+      <!-- MINI DATOS -->
+      <div class="distance-details">
+
+        <div class="distance-detail">
+          <span class="detail-icon">
+            <i class="fa-solid fa-location-dot"></i>
+          </span>
+
+          <div>
+            <strong>Ambato</strong>
+            <small>Ecuador 🇪🇨</small>
+          </div>
+        </div>
+
+
+        <div class="distance-detail center-detail">
+
+          <span class="detail-icon">
+            <i class="fa-solid fa-earth-americas"></i>
+          </span>
+
+          <div>
+            <strong>Dos países</strong>
+            <small>Un mismo cielo</small>
+          </div>
+
+        </div>
+
+
+        <div class="distance-detail">
+
+          <span class="detail-icon">
+            <i class="fa-solid fa-location-dot"></i>
+          </span>
+
+          <div>
+            <strong>Guerrero Negro</strong>
+            <small>México 🇲🇽</small>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- NOTA -->
+      <div class="distance-note">
+
+        <i class="fa-solid fa-circle-info"></i>
+
+        <span>
+          La cifra representa una distancia aproximada en línea recta
+          utilizando coordenadas de referencia de ambas ciudades.
+          No corresponde a una ruta de viaje ni a la distancia exacta
+          entre sus hogares.
+        </span>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+  <section id="fotos">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Pequeños pedacitos de nosotros</div>
+        <h2>Nuestra galería <span class="gradient">de recuerdos</span></h2>
+        <p>Cada foto guarda algo que quiero conservar contigo.</p>
+      </div>
+
+      <div class="photo-carousel">
+        <div class="photo-track" id="photoTrack"></div>
+        <div class="carousel-controls">
+          <button class="round-btn" id="prevPhoto" aria-label="Fotografías anteriores">
+            <i class="fa-solid fa-arrow-left"></i>
+          </button>
+          <button class="round-btn" id="nextPhoto" aria-label="Fotografías siguientes">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+        <p class="photo-hint">
+          <i class="fa-solid fa-hand-pointer"></i>
+          Pulsa cualquier fotografía para verla en grande.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="recuerdos">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Nuestra pequeña historia</div>
+        <h2>Momentos que <span class="gradient">son nuestros</span></h2>
+        <p>Hay comienzos que parecen pequeños y terminan significándolo todo.</p>
+      </div>
+
+      <div class="memory-grid">
+        <article class="glass memory-card">
+          <div class="memory-icon"><i class="fa-solid fa-gamepad"></i></div>
+          <h3>Donde todo comenzó</h3>
+          <p>Una partida de Free Fire, una solicitud de amistad y una conversación que no sabía que iba a significar tanto.</p>
+          <span class="memory-date">El comienzo de nosotros</span>
+        </article>
+
+        <article class="glass memory-card">
+          <div class="memory-icon"><i class="fa-solid fa-headphones"></i></div>
+          <h3>Tu voz, mi lugar favorito</h3>
+          <p>Esas llamadas en las que hablamos de cualquier cosa, nos hacemos compañía y hasta nos quedamos dormidos.</p>
+          <span class="memory-date">Un recuerdo que atesoro</span>
+        </article>
+
+        <article class="glass memory-card">
+          <div class="memory-icon"><i class="fa-solid fa-heart"></i></div>
+          <h3>Aquella pregunta</h3>
+          <p>La noche en que te pregunté si querías ser mi novia. Una fecha que siempre tendrá un espacio especial en mi corazón.</p>
+          <span class="memory-date">22 · 08 · 2026 · 23:30</span>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="musica">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Una canción para nosotros</div>
+        <h2>Nuestra banda <span class="gradient">sonora</span></h2>
+        <p>Hay canciones que se sienten diferentes cuando piensas en alguien.</p>
+      </div>
+
+      <div class="glass music-card">
+        <div class="album-art">
+          <i class="fa-solid fa-music"></i>
+        </div>
+        <div class="music-info">
+          <div class="music-kicker">J ♡ M · Nuestra canción</div>
+          <h3>Una melodía para ti</h3>
+          <p>
+            Porque a veces una canción puede decir lo que las palabras
+            no alcanzan a explicar.
+          </p>
+          <audio class="audio" id="ourAudio" controls preload="metadata">
+            <source src="nosotros/nosotros.mp3" type="audio/mpeg">
+            Tu navegador no puede reproducir este audio.
+          </audio>
+          <p class="music-foot">
+            Coloca nuestra canción en la carpeta musica y ponle el nombre
+            <strong>nuestra-cancion.mp3</strong>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="carta">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Algo que quiero que sepas</div>
+        <h2>Unas palabras <span class="gradient">para ti</span></h2>
+      </div>
+
+      <article class="glass letter">
+        <div class="letter-mark">“</div>
+        <h3>Para mi niña...</h3>
+        <p>
+          Mi vida, de verdad no se como empezar esto, es algo que simplemente
+          se siente, de verdad que tengo muchas cosas que decirte y muchas cosas
+          por agradecerte, eres alguien espectacular, eres una personita muy 
+          tierna, muy adorable y la verdad significas mucho para mi.
+        </p>
+        <p>
+          Te amo mucho mi amor, no se como agradecerte todo lo que haces por mi,
+          como ya sabes de mi pasado, no eh sido alguien muy social o muy popular
+          solo eh sido alguien que se la pasa por asi amargado, pues pase asi 4 años
+          de mi vida y no es algo que me moleste sino que nadie pero nadie pero hizo
+          sentir especial, me hizo sentir querido, me hizo sentir importante, mejor 
+          dicho nadie lo intento, todos se fueron, pero tu te quedaste, desde ahi 
+          empiezo a darte las gracias
+        </p>
+        <p>
+          Conocerte fue, es y sera sin duda alguna lo mejor que me han pasado en la vida
+          llegaste a mi de una manera que jamas imagine, cuando menos lo esperaba y de 
+          una forma que todavia me cuesta creer. Y no exagero cuando digo que, para mi, 
+          fuiste como un angel caido del cielo, que llego justo cuando mas necesitaba
+          encontrar un poco de luz y sin darte cuenta, me salvaste de muchas cosas que 
+          llevaba dentro, fuiste la primera en enserñarme a querer, en enseñarme a amar, 
+          me enseñaste a que me importe alguien, a preocuparme por alguien y a querer 
+          compartir mis dias, mis pensamientos y hasta mis silencios contigo. 
+        </p>
+        <p>
+          Pero sobretodo me enseñaste algo que nunca pense en sentir, no en un largo 
+          tiempo, me hiciste sentirme querido, sentirme especial y la verdad me gusto 
+          mucho, creo que por eso tengo tanto miedo de perderte, no por el temor a 
+          quedarme solo, sino que mi corazón ya se acostumbro a tu presencia, se 
+          acostumbro a tus mensajes, a tu voz, a tus pequeños detalles, a saber de ti, 
+          a preocuparse por ti, a compartir contigo aunque sea un momento muy pequeño 
+          pero que para el significa un mundo entero
+        </p>
+        <p>
+          De verdad eres alguien muy importante para mi.... mucho más de lo que unas 
+          simples palabras puenden explicar, tu eres esa niña que vio mi corazón, 
+          por que dicen que la mirada del corazón es el refljo del alma y la verdad 
+          eso es cierto, aunque estes lejos, cuando hablo contigo, ya sea por chat o 
+          por llamada, mi corazón y mi alma se sienten muchos más aliviados y creeme 
+          que no exagero, ya que si pudieras entrar dentro de mi y ver como te ven 
+          mis ojos, le daria celos y envidia a todo el mundo, hasta la joya más 
+          preciosa es opacada por ti y por eso mi corazón te eligio a ti.
+        </p>
+        <p>
+          Lo hizo sin preguntarme, sin avisarme, lo hizo de poquito a poquito, fue 
+          algo tan rapido que cuando me di cuenta, ya te estaba queriendo, ya estaba 
+          atesorando cada momento contigo y perdon si sueno como un loco pero de verdad 
+          me enamore de ti, de verdad lograste ocupar un lugar tan frio que con tu presencia 
+          todo ese hielo se derritio, pero la verdad sinceramente....
+
+          Como podria culparlo o como podria reclamarle algo?
+
+          Ya que yo igual te empece a querer demsiado, cada cosa que me pasaba o cada momento 
+          que vivia, te venia y te lo contaba a ti y con cada risa tuya, cada palabra tuya 
+          cada imagen tuya, me hizo enamorar mucho mas y la verdad no quiero que me saquen de 
+          aqui, no quiero irme, quiero quedarme contigo, mi corazón lo quiere asi.     
+        </p>
+        <p>
+          Quisiera poder decirte mucho mas pero ya estoy lagrimiando escirbiendo esto, pero 
+          Mi amor...
+          Te amo de verdad, te amo sinceramente, te amo con todo mi corazón, te quiero amar 
+          en todas tus facetas, en tus dias buenos y malos, te quiero amar siempre y se que te 
+          lo digo mucho pero siempre cuentas conmigo, siempre estare aqui para ti, eso nunca lo 
+          olvides mi amor.
+        </p>
+        <div class="letter-sign">Con todo mi amor, Jonathan. ♡</div>
+      </article>
+    </div>
+  </section>
+
+  <section id="sorpresa">
+    <div class="wrap">
+      <div class="glass surprise-box">
+        <div class="surprise-heart"><i class="fa-solid fa-heart"></i></div>
+        <h3>Hay algo más para ti...</h3>
+        <p>
+          Una pequeña sorpresa que puedes abrir cuando quieras.
+          Porque incluso en los días normales me gusta recordarte
+          lo especial que eres para mí.
+        </p>
+        <button class="btn primary" id="surpriseBtn">
+          Abrir mi sorpresa <i class="fa-solid fa-sparkles"></i>
+        </button>
+        <div class="surprise-message" id="surpriseMessage">
+          Si pudiera elegir de nuevo aquella noche del 22 de agosto,
+          volvería a preguntarte si quieres ser mi novia.
+          Y volvería a elegir la oportunidad de escribir esta historia contigo.
+          <br><br>Te amo, Mi Majito Hermosa o mejor dicho 
+          <br><br>Mi Niña Hermosa♡
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-brand">Jonathan <span style="color:var(--pink)">&</span> María</div>
+    <p>Dos lugares. Una historia. Infinitos recuerdos.</p>
+    <p> <span class="heart-beat">♥</span></p>
+    <p>Desde el 22 de agosto de 2026.</p>
+  </div>
+</footer>
+
+<!-- Ventana de fotografías -->
+<div class="modal" id="photoModal" role="dialog" aria-modal="true"
+     aria-labelledby="modalTitle">
+  <div class="modal-panel">
+    <button class="modal-close" id="closeModal" aria-label="Cerrar fotografía">
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+    <div class="modal-visual">
+      <img id="modalImage" src="" alt="">
+    </div>
+    <div class="modal-side">
+      <div class="modal-counter" id="modalCounter">RECUERDO 01</div>
+      <h3 id="modalTitle">Nuestro recuerdo</h3>
+      <p class="modal-description" id="modalDescription"></p>
+      <p class="modal-date" id="modalDate"></p>
+      <div class="modal-nav">
+        <button class="btn" id="modalPrev"><i class="fa-solid fa-arrow-left"></i> Anterior</button>
+        <button class="btn primary" id="modalNext">Siguiente <i class="fa-solid fa-arrow-right"></i></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+/* ==========================================
+   1. CONFIGURACIÓN DE LA RELACIÓN
+   ========================================== */
+
+// Ecuador continental utiliza UTC-5.
+// 22 de agosto, 23:30 en Ecuador = 23 de agosto, 04:30 UTC.
+const relationshipStart = new Date("2026-08-23T04:30:00Z").getTime();
+
+/* ==========================================
+   2. CONTADOR EN TIEMPO REAL
+   ========================================== */
+
+const $ = (id) => document.getElementById(id);
+
+function updateCounter() {
+  const now = Date.now();
+  let difference = now - relationshipStart;
+
+  // La fecha configurada todavía no ha llegado.
+  if (difference < 0) {
+    $("days").textContent = "00";
+    $("hours").textContent = "00";
+    $("minutes").textContent = "00";
+    $("seconds").textContent = "00";
+    $("counter-sub").textContent = "Nuestra historia está a punto de comenzar.";
+    return;
+  }
+
+  const days = Math.floor(difference / 86400000);
+  difference %= 86400000;
+
+  const hours = Math.floor(difference / 3600000);
+  difference %= 3600000;
+
+  const minutes = Math.floor(difference / 60000);
+  const seconds = Math.floor((difference % 60000) / 1000);
+
+  $("days").textContent = days;
+  $("hours").textContent = String(hours).padStart(2, "0");
+  $("minutes").textContent = String(minutes).padStart(2, "0");
+  $("seconds").textContent = String(seconds).padStart(2, "0");
+}
+
+updateCounter();
+setInterval(updateCounter, 1000);
+
+/* ==========================================
+   3. DISTANCIA ENTRE LAS DOS CIUDADES
+   ========================================== */
+
+// Coordenadas geográficas de referencia.
+// Ambato, Ecuador.
+const jonathan = { lat: -1.2491, lon: -78.6168 };
+
+// Guerrero Negro, Baja California Sur, México.
+const maria = { lat: 27.9769, lon: -114.0611 };
+
+function haversineMeters(a, b) {
+  const rad = degrees => degrees * Math.PI / 180;
+  const R = 6371008.8; // radio medio terrestre, en metros
+
+  const dLat = rad(b.lat - a.lat);
+  const dLon = rad(b.lon - a.lon);
+  const lat1 = rad(a.lat);
+  const lat2 = rad(b.lat);
+
+  const h =
+    Math.sin(dLat / 2) ** 2 +
+    Math.cos(lat1) * Math.cos(lat2) *
+    Math.sin(dLon / 2) ** 2;
+
+  return 2 * R * Math.asin(Math.sqrt(Math.min(1, h)));
+}
+
+const meters = Math.round(haversineMeters(jonathan, maria));
+$("distanceMeters").textContent = meters.toLocaleString("es-EC");
+
+/* ==========================================
+   4. GALERÍA: EDITA TUS FOTOGRAFÍAS AQUÍ
+   ========================================== */
+
+// Pon tus fotos dentro de la carpeta "fotos".
+// Puedes cambiar títulos, fechas y descripciones.
+// Los nombres de archivo distinguen mayúsculas y minúsculas
+// al publicar en GitHub Pages.
+
+const photos = [
+  {
+    src: "fotos/foto1.jpg",
+    title: "Mis ojitos favoritos",
+    date: "Un momento para recordar",
+    description: "Esos ojitos, me gustan mucho, son como dos joyitas reflejando, la bondad que tiene y lo tierna que es, aunque diga que no es cierto. "
+  },
+  {
+    src: "fotos/foto2.jpg",
+    title: "Mi niña bonita",
+    date: "Un recuerdo nuestro",
+    description: "A veces no necesito una ocasión especial para recordarte lo mucho que me gustas. Simplemente me encanta verte."
+  },
+  {
+    src: "fotos/foto3.jpg",
+    title: "Las Primeras flores que te di",
+    date: "Para guardar en el corazón",
+    description: "Aunque estemos lejos, no te deje sin tus flores amarillas ya que el que ama de verdad busca toda forma posible para que la otra persona se siente amada."
+  },
+  {
+    src: "fotos/foto4.jpg",
+    title: "Tú y yo",
+    date: "Nuestra historia",
+    description: "Cada recuerdo es una pequeña parte de la historia que estamos construyendo juntos."
+  },
+  {
+    src: "fotos/foto5.jpg",
+    title: "Mi lugar bonito",
+    date: "Un día especial",
+    description: "Entre tantas cosas que pasan en el día, siempre hay algo que me hace pensar en ti."
+  },
+  {
+    src: "fotos/foto6.jpg",
+    title: "Por muchos recuerdos más",
+    date: "Esto apenas comienza",
+    description: "Quiero que algún día tengamos tantas fotografías que nos cueste elegir cuáles poner en esta galería."
+  }
+];
+
+let activePhoto = 0;
+const track = $("photoTrack");
+
+function renderPhotos() {
+  track.innerHTML = "";
+
+  photos.forEach((photo, index) => {
+    const card = document.createElement("button");
+    card.type = "button";
+    card.className = "photo-card";
+    card.setAttribute("aria-label", `Abrir fotografía: ${photo.title}`);
+
+    const thumb = document.createElement("div");
+    thumb.className = "photo-thumb";
+
+    const img = document.createElement("img");
+    img.src = photo.src;
+    img.alt = photo.title;
+    img.loading = "lazy";
+
+    // Si todavía no existe la foto, mostramos un fondo
+    // bonito en vez de dejar un icono de imagen rota.
+    img.addEventListener("error", () => {
+      img.style.display = "none";
+      thumb.style.background =
+        "radial-gradient(circle at 50% 40%, #594078, #171323 75%)";
+    }, { once: true });
+
+    const open = document.createElement("span");
+    open.className = "photo-open";
+    open.innerHTML = '<i class="fa-solid fa-expand"></i>';
+
+    thumb.append(img, open);
+
+    const info = document.createElement("div");
+    info.className = "photo-info";
+
+    const date = document.createElement("small");
+    date.textContent = photo.date;
+
+    const title = document.createElement("h3");
+    title.textContent = photo.title;
+
+    const description = document.createElement("p");
+    description.textContent = photo.description;
+
+    info.append(date, title, description);
+    card.append(thumb, info);
+    card.addEventListener("click", () => openPhoto(index));
+    track.append(card);
+  });
+}
+
+function openPhoto(index) {
+  activePhoto = (index + photos.length) % photos.length;
+  const photo = photos[activePhoto];
+
+  $("modalImage").src = photo.src;
+  $("modalImage").alt = photo.title;
+  $("modalTitle").textContent = photo.title;
+  $("modalDescription").textContent = photo.description;
+  $("modalDate").textContent = photo.date;
+  $("modalCounter").textContent =
+    `RECUERDO ${String(activePhoto + 1).padStart(2, "0")} / ${photos.length}`;
+
+  $("photoModal").classList.add("open");
+  document.body.style.overflow = "hidden";
+  $("closeModal").focus();
+}
+
+function closePhoto() {
+  $("photoModal").classList.remove("open");
+  document.body.style.overflow = "";
+}
+
+function changePhoto(step) {
+  openPhoto(activePhoto + step);
+}
+
+renderPhotos();
+
+$("prevPhoto").addEventListener("click", () => {
+  track.scrollBy({ left: -track.clientWidth * 0.8, behavior: "smooth" });
+});
+$("nextPhoto").addEventListener("click", () => {
+  track.scrollBy({ left: track.clientWidth * 0.8, behavior: "smooth" });
+});
+
+$("closeModal").addEventListener("click", closePhoto);
+$("modalPrev").addEventListener("click", () => changePhoto(-1));
+$("modalNext").addEventListener("click", () => changePhoto(1));
+
+$("photoModal").addEventListener("click", event => {
+  if (event.target === $("photoModal")) closePhoto();
+});
+
+document.addEventListener("keydown", event => {
+  if (!$("photoModal").classList.contains("open")) return;
+
+  if (event.key === "Escape") closePhoto();
+  if (event.key === "ArrowRight") changePhoto(1);
+  if (event.key === "ArrowLeft") changePhoto(-1);
+});
+
+/* ==========================================
+   5. MENÚ PARA CELULARES
+   ========================================== */
+
+$("menuBtn").addEventListener("click", () => {
+  $("navLinks").classList.toggle("active");
+});
+
+document.querySelectorAll(".nav-links a").forEach(link => {
+  link.addEventListener("click", () => {
+    $("navLinks").classList.remove("active");
+  });
+});
+
+/* ==========================================
+   6. SORPRESA INTERACTIVA
+   ========================================== */
+
+$("surpriseBtn").addEventListener("click", () => {
+  const message = $("surpriseMessage");
+  const opened = message.classList.toggle("show");
+
+  $("surpriseBtn").innerHTML = opened
+    ? 'Cerrar mi sorpresa <i class="fa-solid fa-heart"></i>'
+    : 'Abrir mi sorpresa <i class="fa-solid fa-sparkles"></i>';
+
+  if (opened) {
+    message.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    showToast("Un pequeño recordatorio para María ♡");
+    burstHearts();
+  }
+});
+
+/* ==========================================
+   7. ESTRELLAS ANIMADAS
+   ========================================== */
+
+const canvas = $("stars");
+const ctx = canvas.getContext("2d");
+let starList = [];
+let canvasWidth = 0;
+let canvasHeight = 0;
+let animationFrame;
+
+function resizeCanvas() {
+  const ratio = Math.min(window.devicePixelRatio || 1, 2);
+  canvasWidth = window.innerWidth;
+  canvasHeight = window.innerHeight;
+
+  canvas.width = canvasWidth * ratio;
+  canvas.height = canvasHeight * ratio;
+  ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
+
+  const count = Math.min(130, Math.floor(canvasWidth / 8));
+  starList = Array.from({ length: count }, () => ({
+    x: Math.random() * canvasWidth,
+    y: Math.random() * canvasHeight,
+    radius: Math.random() * 1.3 + 0.2,
+    alpha: Math.random() * 0.6 + 0.15,
+    speed: Math.random() * 0.005 + 0.001,
+    phase: Math.random() * Math.PI * 2
+  }));
+}
+
+function drawStars(time = 0) {
+  ctx.clearRect(0, 0, canvasWidth, canvasHeight);
+
+  starList.forEach(star => {
+    const opacity =
+      star.alpha * (0.7 + 0.3 * Math.sin(time * star.speed + star.phase));
+
+    ctx.beginPath();
+    ctx.arc(star.x, star.y, star.radius, 0, Math.PI * 2);
+    ctx.fillStyle = `rgba(218,204,255,${opacity})`;
+    ctx.fill();
+  });
+
+  animationFrame = requestAnimationFrame(drawStars);
+}
+
+resizeCanvas();
+drawStars();
+window.addEventListener("resize", resizeCanvas);
+
+/* ==========================================
+   8. NOTIFICACIONES Y CORAZONES
+   ========================================== */
+
+let toastTimer;
+
+function showToast(message) {
+  const toast = $("toast");
+  toast.textContent = message;
+  toast.classList.add("show");
+
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => toast.classList.remove("show"), 2600);
+}
+
+function burstHearts() {
+  const symbols = ["♥", "♡", "✦", "✧"];
+
+  for (let i = 0; i < 22; i++) {
+    const heart = document.createElement("span");
+    heart.textContent = symbols[Math.floor(Math.random() * symbols.length)];
+
+    Object.assign(heart.style, {
+      position: "fixed",
+      left: `${10 + Math.random() * 80}%`,
+      top: `${35 + Math.random() * 35}%`,
+      zIndex: "150",
+      pointerEvents: "none",
+      color: Math.random() > .5 ? "#f2b8cb" : "#c4b1ff",
+      fontSize: `${12 + Math.random() * 20}px`,
+      transition: "transform 1.5s ease, opacity 1.5s ease",
+      opacity: "1"
+    });
+
+    document.body.appendChild(heart);
+
+    requestAnimationFrame(() => {
+      heart.style.transform =
+        `translate(${(Math.random() - .5) * 180}px, ${-80 - Math.random() * 180}px) rotate(${Math.random() * 90}deg)`;
+      heart.style.opacity = "0";
+    });
+
+    setTimeout(() => heart.remove(), 1600);
+  }
+}
+
+function updateHeroDays() {
+  const start = new Date("2026-08-23T04:30:00Z").getTime();
+  const now = Date.now();
+
+  const days = Math.max(
+    0,
+    Math.floor((now - start) / 86400000)
+  );
+
+  const element = document.getElementById("heroDays");
+
+  if (element) {
+    element.textContent = days;
+  }
+}
+
+updateHeroDays();
+setInterval(updateHeroDays, 60000);
+
+
+</script>
+</body>
+</html>
